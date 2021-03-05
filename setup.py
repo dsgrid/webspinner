@@ -18,5 +18,6 @@ setup(
     packages = setuptools.find_packages(),
     url = 'https://github.com/dsgrid/webspinner',
     description = 'Python utilities for working with various dsgrid data sources',
+    long_description = open('README.txt').read(),
     install_requires = open('requirements.txt').read()
 )
