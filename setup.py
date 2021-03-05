@@ -21,6 +21,9 @@ setuptools.setup(
     description = 'Python utilities for working with various dsgrid data sources',
     long_description = readme,
     long_description_content_type = 'text/markdown',
+    package_data={
+        '': ['README.md', 'LICENSE', 'CHANGES.txt']
+    },
     install_requires=[
         'sqlalchemy'
     ],
