@@ -3,7 +3,7 @@ webspinner.pautils
 ------------------
 Utilities for working with the parquet data format, especially via pandas.
 
-:copyright: (c) 2021 by The Alliance for Sustainable Energy
+:copyright: (c) 2021, Alliance for Sustainable Energy, LLC
 :license: BSD-3
 """
 

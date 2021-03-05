@@ -3,7 +3,7 @@ webspinner.connect.aws
 ----------------------
 This module provides utilities for connecting to AWS data sources.
 
-:copyright: (c) 2021 by The Alliance for Sustainable Energy
+:copyright: (c) 2021, Alliance for Sustainable Energy, LLC
 :license: BSD-3
 """
 
