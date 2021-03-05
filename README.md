@@ -1,24 +1,27 @@
 # webspinner
+[![PyPI](https://img.shields.io/pypi/v/webspinner.svg)](https://pypi.python.org/pypi/webspinner/)
 
 Python utilities for working with data source types used by the dsgrid project 
 (i.e., AWS, PostgreSQL, and .parquet)
 
+[Install](#install) | [Configure](#configure) | [Uninstall](#uninstall)
+
 ## Install
 
-You can install via git+https if you have access to the repository and do
-not have 2FA enabled on github:
-```
-pip install git+https://github.com/dsgrid/webspinner.git@master
-```
-If you have 2FA enabled on your github account you will need to install via ssh:
 ```bash
-pip install git+ssh://git@github.com/dsgrid/webspinner.git@master
+pip install webspinner
 ```
 
-If you need the last version of webspinner before configuration files were 
-introduced, use @v0.6.0 instead of @master or @v1.0.0, for example:
+or 
+
+```bash
+pip install git+ssh://git@github.com/dsgrid/webspinner.git@v1.1.0
 ```
-pip install git+https://github.com/dsgrid/webspinner.git@v0.6.0
+
+or 
+
+```bash
+pip install git+https://github.com/dsgrid/webspinner.git@master
 ```
 
 ## Configure
@@ -37,13 +40,22 @@ project. Please configure access to the resources you need.
 pip install pgpasslib psycopg2
 ```
 
-Install [pgAdmin](https://www.pgadmin.org/download/) or another PostgreSQL client. Then identify or create your [pgpass file](https://www.postgresql.org/docs/9.1/static/libpq-pgpass.html). On Mac and Linux, the file to edit or create is `~/.pgpass`. On Windows it is `%APPDATA%/Roaming/postgresql/pgpass.conf`, where `%APPDATA%` is the AppData subdirectory under your user profile (i.e., `C:/Users/$USER/AppData`). If the file does not yet exist, simply create a new text file named `pgpass.conf`. Once the file exists, add the lines like:
+Install [pgAdmin](https://www.pgadmin.org/download/) or another PostgreSQL client. 
+Then identify or create your [pgpass file](https://www.postgresql.org/docs/9.1/static/libpq-pgpass.html). 
+On Mac and Linux, the file to edit or create is `~/.pgpass`. On Windows it is 
+`%APPDATA%/Roaming/postgresql/pgpass.conf`, where `%APPDATA%` is the AppData 
+subdirectory under your user profile (i.e., `C:/Users/$USER/AppData`). If the 
+file does not yet exist, simply create a new text file named `pgpass.conf`. 
+Once the file exists, add the lines like:
 
 ```
 POSTGRES_SERVER_ADDRESS:*:*:$USER:YOUR_PASSWORD
 ```
 
-replacing `POSTGRES_SERVER_ADDRESS` with the PostgreSQL server to connect to, `$USER` with your actual username, and `YOUR_GISPGDB_PASSWORD` with your actual password. The dsgrid team typically connects to `10.20.5.28` or its alias `gds_edit.nrel.gov`.
+replacing `POSTGRES_SERVER_ADDRESS` with the PostgreSQL server to connect to, 
+`$USER` with your actual username, and `YOUR_GISPGDB_PASSWORD` with your actual 
+password. The dsgrid team typically connects to `10.20.5.28` or its alias 
+`gds_edit.nrel.gov`.
 
 **On Mac and Linux** be sure to set the permissions to
 
@@ -78,7 +90,9 @@ function.
 pip install pyathena awscli
 ```
 
-Set up your AWS access credentials by issuing the following command in the terminal. (FYI there are [other ways](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#guide-configuration) to set up your credentials if you're interested.)
+Set up your AWS access credentials by issuing the following command in the terminal. 
+(FYI there are [other ways](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#guide-configuration) 
+to set up your credentials if you're interested.)
 
 ```
 >> aws configure

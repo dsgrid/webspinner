@@ -1,3 +1,10 @@
+# [LICENSE]
+# BSD 3-Clause License
+# 
+# Copyright (c) 2021, Alliance for Sustainable Energy.
+# All rights reserved.
+# [/LICENSE]
+
 import pgpasslib
 import psycopg2
 from sqlalchemy import create_engine
