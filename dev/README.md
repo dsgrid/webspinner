@@ -21,7 +21,7 @@ pip install -r webspinner/dev/requirements.txt
     python setup.py sdist
     twine upload --repository testpypi dist/*
     # look at https://test.pypi.org/project/webspinner/
-    pip install --index-url https://test.pypi.org/simple/ webspinner
+    pip install --index-url https://test.pypi.org/simple/ webspinner[aws,pgsql]
     # check it out ... fix things ...
     ```
 
