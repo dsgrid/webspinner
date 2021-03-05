@@ -19,6 +19,7 @@ pip install webspinner[dev]
 
     ```
     python setup.py sdist
+    twine check dist/*
     twine upload --repository testpypi dist/*
     # look at https://test.pypi.org/project/webspinner/
     pip install --index-url https://test.pypi.org/simple/ webspinner[aws,pgres,parquet]
