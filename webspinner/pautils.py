@@ -1,13 +1,11 @@
-# [LICENSE]
-# BSD 3-Clause License
-# 
-# Copyright (c) 2021, Alliance for Sustainable Energy.
-# All rights reserved.
-# [/LICENSE]
-
-'''
+"""
+webspinner.pautils
+------------------
 Utilities for working with the parquet data format, especially via pandas.
-'''
+
+:copyright: (c) 2021 by The Alliance for Sustainable Energy
+:license: BSD-3
+"""
 
 import pyarrow as pa
 import pyarrow.parquet as pq

@@ -8,7 +8,7 @@ pip install webspinner[dev]
 
 ## Create a new release
 
-1. Update version number, CHANGES.txt, setup.py, LICENSE and header as needed
+1. Update version number, CHANGES.txt, setup.py, LICENSE and headers as needed
 2. Create release on github
 3. Release tagged version on pypi
     
@@ -21,7 +21,7 @@ pip install webspinner[dev]
     python setup.py sdist
     twine upload --repository testpypi dist/*
     # look at https://test.pypi.org/project/webspinner/
-    pip install --index-url https://test.pypi.org/simple/ webspinner[aws,pgsql]
+    pip install --index-url https://test.pypi.org/simple/ webspinner[aws,pgres,parquet]
     # check it out ... fix things ...
     ```
 

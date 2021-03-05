@@ -1,16 +1,15 @@
-# [LICENSE]
-# BSD 3-Clause License
-# 
-# Copyright (c) 2021, Alliance for Sustainable Energy.
-# All rights reserved.
-# [/LICENSE]
+"""
+webspinner
+----------
+Python utilities for working with various dsgrid data sources
+
+:copyright: (c) 2021 by The Alliance for Sustainable Energy
+:license: BSD-3
+"""
 
 import configparser
 
-__author__ = "Elaine T. Hale"
-__email__ = "elaine.hale@nrel.gov"
-
-from ._version import __version__
+from .__version__ import __version__
 
 class WebspinnerRuntimeError(RuntimeError): pass
 

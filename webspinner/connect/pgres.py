@@ -1,9 +1,11 @@
-# [LICENSE]
-# BSD 3-Clause License
-# 
-# Copyright (c) 2021, Alliance for Sustainable Energy.
-# All rights reserved.
-# [/LICENSE]
+"""
+webspinner.connect.pgres
+----------------------
+This module provides utilities for connecting to AWS data sources.
+
+:copyright: (c) 2021 by The Alliance for Sustainable Energy
+:license: BSD-3
+"""
 
 import pgpasslib
 import psycopg2

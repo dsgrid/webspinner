@@ -2,37 +2,37 @@ import setuptools
 import pathlib
 
 here = pathlib.Path(__file__).parent
+metadata = {}
 
-with open(here / 'webspinner' / '_version.py', encoding='utf-8') as f:
-    version = f.read()
+with open(here / 'webspinner' / '__version__.py', 'r', encoding='utf-8') as f:
+    exec(f.read(), metadata)
 
-version = version.split()[2].strip('"').strip("'")
-
-with open(here / 'README.md', encoding='utf-8') as f:
+with open('README.md', 'r', 'utf-8') as f:
     readme = f.read()
 
 setuptools.setup(
-    name = 'webspinner',
-    version = version,
-    author = 'Elaine T. Hale',
-    author_email = 'elaine.hale@nrel.gov',
-    packages = setuptools.find_packages(),
-    url = 'https://github.com/dsgrid/webspinner',
-    description = 'Python utilities for working with various dsgrid data sources',
+    name = metadata['__title__'],
+    version = metadata['__version__'],
+    author = metadata['__author__'],
+    author_email = metadata['__author_email__'],
+    description = metadata['__description__'],
     long_description = readme,
     long_description_content_type = 'text/markdown',
-    package_data={
-        '': ['README.md', 'LICENSE', 'CHANGES.txt']
+    url = metadata['__url__'],
+    packages = setuptools.find_packages(),
+    python_requires = '>=3.6',
+    package_data = {
+        '': ['LICENSE']
     },
-    install_requires=[
+    install_requires = [
         'sqlalchemy'
     ],
-    extras_require={
+    extras_require = {
         'aws': [
             'pyathena',
             'awscli'
         ],
-        'pgsql': [
+        'pgres': [
             'pgpasslib',
             'psycopg2'
         ],

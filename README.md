@@ -27,10 +27,10 @@ pip install git+https://github.com/dsgrid/webspinner.git@master
 To get dependencies required for certain types of resources, add extras as in:
 
 ```
-pip install webspinner[pgsql]
+pip install webspinner[pgres]
 pip install webspinner[aws]
 pip install webspinner[parquet]
-pip install webspinner[pgsql,aws,parquet]
+pip install webspinner[pgres,aws,parquet]
 ```
 
 ## Configure
