@@ -33,6 +33,9 @@ setuptools.setup(
             'pgpasslib',
             'psycopg2'
         ],
+        'parquet': [
+            'pyarrow'
+        ],
         'dev': [
             'twine'
         ]

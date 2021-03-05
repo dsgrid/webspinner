@@ -3,7 +3,7 @@
 To get all of the development dependencies for Python:
 
 ```
-pip install -r webspinner/dev/requirements.txt
+pip install webspinner[dev]
 ```
 
 ## Create a new release
