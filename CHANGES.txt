@@ -1,0 +1,9 @@
+v1.0.0, 01/19/2021 -- removing project-specific default arguments. 
+                      project-specific default arguments are instead supported 
+                      through a webspinner.configure mechanism
+v0.6.0, 01/07/2021 -- added work_group argument to webspinner.aws
+v0.5.0, 05/20/2020 -- webspinner.aws improvements in logging, documentation, and 
+                      read_athena_sql does not retry bad SQL queries
+v0.4.0, 12/20/2019 -- Added webspinner.aws.download_s3_file and enabled retries 
+                      in webspinner.aws.read_athena_sql
+v0.3.0, 09/26/2019 -- Initial named release
